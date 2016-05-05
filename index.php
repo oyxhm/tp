@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
-phpinfo();
-
+// phpinfo();
+echo getcwd();
 $log = new Monolog\Logger("name");
 
 $log->pushHandler(new Monolog\Handler\StreamHandler('app.log' , Monolog\Logger::WARNING));
